@@ -1,0 +1,948 @@
+[
+    {
+        "id": "4b536904faff7dad",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9d57ce6498831f3a",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "05701ffea520adb1",
+        "type": "ui_tab",
+        "name": "Sensores",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "7f2b6f528ee261bc",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#0084ff",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#0084ff",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0084ff",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#4da9ff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0084ff",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "9694eea6917952c8",
+        "type": "ui_group",
+        "name": "minichef",
+        "tab": "aaa8926bcbd8d993",
+        "order": 1,
+        "disp": true,
+        "width": "10",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "79b9455490d650bc",
+        "type": "ui_tab",
+        "name": "Graficos",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "e9bbd57b5536290b",
+        "type": "ui_group",
+        "name": "manual",
+        "tab": "e4e66b3638f914d2",
+        "order": 3,
+        "disp": false,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e4e66b3638f914d2",
+        "type": "ui_tab",
+        "name": "Alimentar",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "f29dd253ac917577",
+        "type": "ui_group",
+        "name": "Dados em tempo real de seu alimentador",
+        "tab": "05701ffea520adb1",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "aaa8926bcbd8d993",
+        "type": "ui_tab",
+        "name": "Configuracoes",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "77d2c643345a6022",
+        "type": "ui_group",
+        "name": "Dados de seu alimentador",
+        "tab": "79b9455490d650bc",
+        "order": 1,
+        "disp": true,
+        "width": "25",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "cbf43562c4d46b68",
+        "type": "ui_group",
+        "name": "automatico",
+        "tab": "e4e66b3638f914d2",
+        "order": 2,
+        "disp": false,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6bd7a75b1f08f52f",
+        "type": "ui_group",
+        "name": "Tipo de dosagem",
+        "tab": "e4e66b3638f914d2",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "104b0732a77c67ba",
+        "type": "ui_spacer",
+        "z": "4b536904faff7dad",
+        "name": "spacer",
+        "group": "77d2c643345a6022",
+        "order": 2,
+        "width": 25,
+        "height": 1
+    },
+    {
+        "id": "4ef04ebcc948db05",
+        "type": "mqtt in",
+        "z": "4b536904faff7dad",
+        "name": "",
+        "topic": "esp32/temperature",
+        "qos": "2",
+        "datatype": "utf8",
+        "broker": "9d57ce6498831f3a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 400,
+        "wires": [
+            [
+                "8edfc54c70ae8e1e",
+                "b9f33cac3209a818"
+            ]
+        ]
+    },
+    {
+        "id": "a79a64220c09b12d",
+        "type": "ui_gauge",
+        "z": "4b536904faff7dad",
+        "name": "",
+        "group": "f29dd253ac917577",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "humy",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "99",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 510,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "b786ceae05850729",
+        "type": "mqtt in",
+        "z": "4b536904faff7dad",
+        "name": "",
+        "topic": "esp32/humidity",
+        "qos": "2",
+        "datatype": "utf8",
+        "broker": "9d57ce6498831f3a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 580,
+        "wires": [
+            [
+                "a79a64220c09b12d",
+                "9fa5c471ce6f5a80"
+            ]
+        ]
+    },
+    {
+        "id": "b9f33cac3209a818",
+        "type": "ui_chart",
+        "z": "4b536904faff7dad",
+        "name": "",
+        "group": "77d2c643345a6022",
+        "order": 1,
+        "width": 25,
+        "height": 8,
+        "label": "Temperatura",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "0",
+        "ymax": "29",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "604800",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ff00dd",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 530,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9fa5c471ce6f5a80",
+        "type": "ui_chart",
+        "z": "4b536904faff7dad",
+        "name": "",
+        "group": "77d2c643345a6022",
+        "order": 4,
+        "width": 25,
+        "height": 8,
+        "label": "Humidade",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "0",
+        "ymax": "99",
+        "removeOlder": "48",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "604800",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#00ff2a",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 530,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8edfc54c70ae8e1e",
+        "type": "ui_gauge",
+        "z": "4b536904faff7dad",
+        "name": "",
+        "group": "f29dd253ac917577",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "temperature",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "29",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 530,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "341ec48527570552",
+        "type": "mqtt out",
+        "z": "4b536904faff7dad",
+        "name": "",
+        "topic": "esp32/output",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9d57ce6498831f3a",
+        "x": 1590,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "0af7efc66f60b702",
+        "type": "ui_button",
+        "z": "4b536904faff7dad",
+        "name": "",
+        "group": "cbf43562c4d46b68",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Alimentar dose automatica",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1140,
+        "y": 600,
+        "wires": [
+            [
+                "341ec48527570552"
+            ]
+        ]
+    },
+    {
+        "id": "2e2bddb1e9e2ca08",
+        "type": "ui_button",
+        "z": "4b536904faff7dad",
+        "name": "",
+        "group": "e9bbd57b5536290b",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Alimentar Dose manual",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1130,
+        "y": 480,
+        "wires": [
+            [
+                "341ec48527570552"
+            ]
+        ]
+    },
+    {
+        "id": "9483921fae393167",
+        "type": "mqtt in",
+        "z": "4b536904faff7dad",
+        "name": "",
+        "topic": "esp32/plate",
+        "qos": "2",
+        "datatype": "utf8",
+        "broker": "9d57ce6498831f3a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 220,
+        "wires": [
+            [
+                "c1acb21fe98cb3df"
+            ]
+        ]
+    },
+    {
+        "id": "d9267a5c34870217",
+        "type": "ui_chart",
+        "z": "4b536904faff7dad",
+        "name": "",
+        "group": "77d2c643345a6022",
+        "order": 3,
+        "width": 25,
+        "height": 8,
+        "label": "Plate",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "0",
+        "ymax": "350",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "604800",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#00d5ff",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 510,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "df73e6335ec49020",
+        "type": "ui_gauge",
+        "z": "4b536904faff7dad",
+        "name": "",
+        "group": "f29dd253ac917577",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Plate",
+        "label": "gramas",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "350",
+        "colors": [
+            "#00bfff",
+            "#ff0066",
+            "#9900ff"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 510,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "e44e35f46a02bdf4",
+        "type": "ui_switch",
+        "z": "4b536904faff7dad",
+        "name": "",
+        "label": "Dose manual",
+        "tooltip": "",
+        "group": "6bd7a75b1f08f52f",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 1090,
+        "y": 260,
+        "wires": [
+            [
+                "773d9276104a6436",
+                "a36a82825f7faf87"
+            ]
+        ]
+    },
+    {
+        "id": "d2e05bde6fb16652",
+        "type": "change",
+        "z": "4b536904faff7dad",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"show\":[\"Alimentar_manual\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1420,
+        "y": 200,
+        "wires": [
+            [
+                "2d90e5507bbe3841"
+            ]
+        ]
+    },
+    {
+        "id": "773d9276104a6436",
+        "type": "switch",
+        "z": "4b536904faff7dad",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1250,
+        "y": 220,
+        "wires": [
+            [
+                "d2e05bde6fb16652"
+            ],
+            [
+                "0a81dfb311f66d60"
+            ]
+        ]
+    },
+    {
+        "id": "2d90e5507bbe3841",
+        "type": "ui_ui_control",
+        "z": "4b536904faff7dad",
+        "name": "",
+        "events": "all",
+        "x": 1660,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0a81dfb311f66d60",
+        "type": "change",
+        "z": "4b536904faff7dad",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"hide\":[\"Alimentar_manual\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1420,
+        "y": 240,
+        "wires": [
+            [
+                "2d90e5507bbe3841"
+            ]
+        ]
+    },
+    {
+        "id": "4fdac311dcd50c45",
+        "type": "hidden-ui-load",
+        "z": "4b536904faff7dad",
+        "group": "e9bbd57b5536290b",
+        "order": 0,
+        "name": "a",
+        "x": 910,
+        "y": 200,
+        "wires": [
+            [
+                "e44e35f46a02bdf4"
+            ]
+        ]
+    },
+    {
+        "id": "3e083e754e0e2d61",
+        "type": "change",
+        "z": "4b536904faff7dad",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"hide\":[\"Alimentar_automatico\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1420,
+        "y": 280,
+        "wires": [
+            [
+                "2d90e5507bbe3841"
+            ]
+        ]
+    },
+    {
+        "id": "a36a82825f7faf87",
+        "type": "switch",
+        "z": "4b536904faff7dad",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1250,
+        "y": 300,
+        "wires": [
+            [
+                "3e083e754e0e2d61"
+            ],
+            [
+                "18c71d66997a3fa8"
+            ]
+        ]
+    },
+    {
+        "id": "18c71d66997a3fa8",
+        "type": "change",
+        "z": "4b536904faff7dad",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"show\":[\"Alimentar_automatico\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1420,
+        "y": 320,
+        "wires": [
+            [
+                "2d90e5507bbe3841"
+            ]
+        ]
+    },
+    {
+        "id": "c6c6dd18a2b4d3e4",
+        "type": "ui_slider",
+        "z": "4b536904faff7dad",
+        "name": "",
+        "label": "Quantidade de racao (em gramas)",
+        "tooltip": "",
+        "group": "e9bbd57b5536290b",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "300",
+        "step": 1,
+        "className": "",
+        "x": 1160,
+        "y": 440,
+        "wires": [
+            [
+                "341ec48527570552"
+            ]
+        ]
+    },
+    {
+        "id": "a5147721295f4351",
+        "type": "ui_slider",
+        "z": "4b536904faff7dad",
+        "name": "",
+        "label": "Intervalo entre refeicoes (em horas)",
+        "tooltip": "",
+        "group": "e9bbd57b5536290b",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "8",
+        "step": 1,
+        "className": "",
+        "x": 1160,
+        "y": 400,
+        "wires": [
+            [
+                "341ec48527570552"
+            ]
+        ]
+    },
+    {
+        "id": "582a00fc6c9807ad",
+        "type": "ui_form",
+        "z": "4b536904faff7dad",
+        "name": "",
+        "label": "",
+        "group": "9694eea6917952c8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Quantidade de racao (em gramas)",
+                "value": "qnt_racao",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Tempo entre refeicoes (em horas)",
+                "value": "time_interval",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Checar se o pote esta cheio",
+                "value": "check_plate",
+                "type": "checkbox",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "qnt_racao": "",
+            "time_interval": "",
+            "check_plate": false
+        },
+        "payload": "",
+        "submit": "Salvar",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 1230,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c1acb21fe98cb3df",
+        "type": "function",
+        "z": "4b536904faff7dad",
+        "name": "function 1",
+        "func": "msg.payload = ( (msg.payload - 1997)*350 / (4096-1997) ).toFixed(2)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 220,
+        "wires": [
+            [
+                "df73e6335ec49020",
+                "d9267a5c34870217"
+            ]
+        ]
+    }
+]
